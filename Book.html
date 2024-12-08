@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel</title>
+    <link rel="stylesheet" href="./assets/Bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="/assets/CSS/Book.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="nav_cont">
+      <nav
+        class="navbar container navbar-expand-lg p-3 z-2 d-flex justify-content-between align-items-center"
+      >
+        <div>
+          <img
+            src="https://th.bing.com/th/id/R.2f5935a9ad75ce6d700533d0f7928c4a?rik=8LY1%2f5UN3rA6lg&riu=http%3a%2f%2fwww.doos.se%2fwp-content%2fuploads%2f2016%2f05%2f250px-hilton_hotels_logo_horiz.png&ehk=xLPnusYaFl3vqJR7nl624lXyvej8DEHnUO3cTG%2fYGNA%3d&risl=&pid=ImgRaw&r=0"
+            width="200"
+            alt="Logo"
+            class="pointer-event"
+          />
+        </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link fs-4 fw-bold" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-4 fw-bold" href="./index.html">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-4 fw-bold" href="./index.html">Rooms</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-4 fw-bold" href="./index.html">Amenities</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-4 fw-bold" href="./index.html">Reviews</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-4 fw-bold" href="./Login.html">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fs-4 fw-bold" href="./regester.html"
+                >Regester</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="hero position-relative">
+      <div class="container">
+        <h3 class="fw-bold text-primary">Ready to Book Your Stay?</h3>
+        <h2 class="">
+          Book your room today and secure a luxurious escape! Simply fill in the
+          form below to reserve your spot in paradise. Our team will ensure that
+          every detail of your stay is taken care of.
+        </h2>
+
+        <a href="#booking-form" class="btn btn-primary btn-lg">Book Now</a>
+      </div>
+    </div>
+
+    <div class="Booking">
+      <div class="book_cont container" id="booking-form">
+        <div id="booking-form" class="container mt-5">
+          <h3 class="text-center mb-4">Let’s Get Your Stay Booked!</h3>
+
+          <form>
+            <!-- Personal Information Section -->
+            <div class="row mb-3">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="firstName" class="fw-bold"
+                    >First Name</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="firstName"
+                    placeholder="Enter your first name"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="lastName" class="fw-bold"
+                    >Last Name</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="lastName"
+                    placeholder="Enter your last name"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="row mb-3">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="address" class="fw-bold">Address</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="address"
+                    placeholder="Enter your address"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="city" class="fw-bold">City</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="city"
+                    placeholder="Enter your city"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group mb-3">
+              <label for="ssn" class="fw-bold">SSN/ID</label>
+              <input
+                type="text"
+                class="form-control"
+                id="ssn"
+                placeholder="Enter your Social Security Number or ID"
+                required
+              />
+            </div>  
+            <!--Room Info  -->
+            <div class="row mb-3">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="roomType" class="fw-bold"
+                    >Room Type</label
+                  >
+                  <select class="form-control" id="roomType" required>
+                    <option value="" disabled selected>Select Room Type</option>
+                    <option value="single">Single Room</option>
+                    <option value="double">Double Room</option>
+                    <option value="suite">Suite</option>
+                    <option value="family">Family Room</option>
+                  </select>
+                </div>
+              </div>
+              
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="arrivalDate" class="fw-bold"
+                    >Arrival Date</label
+                  >
+                  <input
+                    type="date"
+                    class="form-control"
+                    id="arrivalDate"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="row mb-3">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="departureDate" class="fw-bold"
+                    >Departure Date</label
+                  >
+                  <input
+                    type="date"
+                    class="form-control"
+                    id="departureDate"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="numberOfGuests" class="fw-bold"
+                    >Number of Guests</label
+                  >
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="numberOfGuests"
+                    placeholder="Enter the number of guests"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- Contact Information Section -->
+            <div class="row mb-3">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="email" class="fw-bold"
+                    >Email Address</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="Enter your email"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label for="phone" class="fw-bold"
+                    >Phone Number</label
+                  >
+                  <input
+                    type="tel"
+                    class="form-control"
+                    id="phone"
+                    placeholder="Enter your phone number"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- Special Requests Section -->
+            <div class="form-group mb-4">
+              <label for="specialRequests" class="fw-bold"
+                >Special Requests</label
+              >
+              <textarea
+                class="form-control"
+                id="specialRequests"
+                rows="4"
+                placeholder="Enter any special requests (optional)"
+              ></textarea>
+            </div>
+            <br>
+            
+            <!-- room price section -->
+            <div class=" d-flex justify-content-center align-items-center">
+              <div class="alert alert-info w-100 text-center mb-0">
+                <h4 class="fw-bold">Room Price: $5000 per day</h4>
+              </div>
+            </div>
+        </div>
+            <br>
+        
+            <!-- payment sections -->
+
+            <div class="PaymentForms container mt-5">
+              <h3 class="text-center mb-4">Choose Your Payment Method</h3>
+              <div class="row">
+                <!-- Cash Payment Form -->
+                <div class="col-md-6">
+                  <div class="card p-4 shadow">
+                    <h4 class="text-center mb-3">Pay with Cash</h4>
+                    <form>
+                      <div class="form-group mb-3">
+                        <label for="cashName" class="fw-medium text-dark p-2">Full Name</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="cashName"
+                          placeholder="Enter your full name"
+                          required
+                        />
+                      </div>
+                      <div class="form-group mb-3">
+                        <label for="cashPhone" class="fw-medium text-dark p-2">Phone Number</label>
+                        <input
+                          type="tel"
+                          class="form-control"
+                          id="cashPhone"
+                          placeholder="Enter your phone number"
+                          required
+                        />
+                      </div>
+                      <div class="form-group mb-3">
+                        <label for="cashAddress" class="fw-medium text-dark p-2">Address</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="cashAddress"
+                          placeholder="Enter your address"
+                          required
+                        />
+                      </div>
+                      <button type="submit" class="btn btn-success btn-block">
+                        Confirm Cash Payment
+                      </button>
+                    </form>
+                  </div>
+                </div>
+            
+                <!-- Visa Card Payment Form -->
+                <div class="col-md-6">
+                  <div class="card p-4 shadow">
+                    <h4 class="text-center mb-3">Pay with Visa Card</h4>
+                    <form>
+                      <div class="form-group mb-3">
+                        <label for="cardName" class="fw-medium text-dark p-2">Cardholder Name</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="cardName"
+                          placeholder="Enter the cardholder's name"
+                          required
+                        />
+                      </div>
+                      <div class="form-group mb-3">
+                        <label for="cardNumber" class="fw-medium text-dark p-2">Card Number</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="cardNumber"
+                          placeholder="Enter your card number"
+                          required
+                        />
+                      </div>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group mb-3">
+                            <label for="expiryDate" class="fw-medium text-dark p-2">Expiry Date</label>
+                            <input
+                              type="month"
+                              class="form-control"
+                              id="expiryDate"
+                              required
+                            />
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group mb-3">
+                            <label for="cvv" class="fw-medium text-dark">CVV</label>
+                            <input
+                              type="text"
+                              class="form-control"
+                              id="cvv"
+                              placeholder="3-digit code"
+                              required
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-group mb-3">
+                        <label for="billingAddress" class="fw-medium text-dark p-2">Billing Address</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="billingAddress"
+                          placeholder="Enter your billing address"
+                          required
+                        />
+                      </div>
+                      <button type="submit" class="btn btn-success btn-block">
+                        Confirm Visa Payment
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+
+      </div>
+      </div>
+    </div>
+    <script src="./assets//Bootstrap/bootstrap.min.js"></script>
+    <script src="./assets/Bootstrap/popper.min.js"></script>
+    <script src="./assets/Bootstrap/jquery-3.7.1.js"></script>
+  </body>
+</html>

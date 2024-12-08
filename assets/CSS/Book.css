@@ -1,0 +1,126 @@
+:root {
+  --primary-color: #3b5476;
+  --secondary-color: #7fa1c3;
+  --background-color: #2f544d;
+  --text-color: #333333;
+  --accent-color: #e2dad6;
+}
+:root {
+  --font-primary: "Poppins", sans-serif;
+}
+
+body {
+  font-family: var(--font-primary);
+  overflow-x: hidden;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--font-primary);
+}
+/* nav */
+.navbar-collapse {
+  flex-grow: 0 !important;
+}
+.nav_cont {
+  background-color: rgba(121, 147, 147, 0.889);
+  width: 100%;
+  position: sticky;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  box-shadow: 5px 5px 10px var(--secondary-color);
+}
+
+nav .nav-link {
+  color: var(--primary-color);
+  transition: all 0.6s;
+}
+
+nav .nav-link:hover {
+  color: var(--accent-color);
+  text-shadow: 2px 2px 7px var(--text-color);
+}
+.hero {
+  height: 65vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: linear-gradient(135deg, #030c2091, #12191b6a, #55555511),
+    url("./../../Media/Book.jpeg");
+  background-size: cover;
+  background-position: center; 
+  background-repeat: no-repeat; 
+  color: white;
+  text-align: center;
+  padding: 50px;
+  margin-bottom: 10rem;
+}
+
+
+.Booking {
+  background: linear-gradient(135deg, #520e9b, #2575fc);
+  padding: 40px 15px;
+  border-radius: 10px;
+  color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.Booking h3 {
+  font-family: 'Arial', sans-serif;
+  font-size: 2.5rem;
+  color: white;
+}
+
+label{
+  color: #fff;
+  font-weight: 500;
+  font-size: 25px;
+}
+
+.PaymentForms {
+  background: linear-gradient(to bottom, #e6f7ff, #ffffff);
+  padding: 30px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.PaymentForms h3 {
+  font-family: 'Arial', sans-serif;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.card {
+  border: none;
+  border-radius: 12px;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.btn {
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 8px;
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
+
+
+@media (max-width: 768px) {
+  .Booking {
+    padding: 20px 10px;
+  }
+}
